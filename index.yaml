@@ -18921,6 +18921,38 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/filebrowser-1.0.0/filebrowser-1.0.0.tgz
     version: 1.0.0
+  filerun:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-04-15T21:57:50.618497907Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.1.1
+    description: filerun helm package
+    digest: 4c444f87790e22ca8d36b461059c35477713c167f41d65521e13aaaff17e24dd
+    home: https://github.com/akarthik10/charts/tree/master/charts/stable/filerun
+    icon: https://docs.filerun.com/lib/tpl/bootstrap3/images/logo.png
+    keywords:
+    - filerun
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: filerun@filerun.com
+      name: filerun
+    name: filerun
+    sources:
+    - https://github.com/filerun/docker
+    urls:
+    - https://github.com/akarthik10/charts/releases/download/filerun-1.0.0/filerun-1.0.0.tgz
+    version: 1.0.0
   flaresolverr:
   - annotations:
       artifacthub.io/changes: |
@@ -102508,4 +102540,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/zwavejs2mqtt-1.0.0/zwavejs2mqtt-1.0.0.tgz
     version: 1.0.0
-generated: "2022-04-14T05:47:14.759498943Z"
+generated: "2022-04-15T21:57:50.642617673Z"
