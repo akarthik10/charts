@@ -36,6 +36,7 @@
 | [facebox](stable/facebox) | Facebox detects and identifies faces in photos. You can teach facebox with as little as one sample image. |
 | [factorio](stable/factorio) | Factorio dedicated steam game server |
 | [filebrowser](stable/filebrowser) | filebrowser provides a file managing interface within a specified directory |
+| [filerun](stable/filerun) | filerun helm package |
 | [flaresolverr](stable/flaresolverr) | FlareSolverr is a proxy server to bypass Cloudflare protection |
 | [flood](stable/flood) | Flood is a monitoring service for various torrent clients |
 | [focalboard](stable/focalboard) | Focalboard is an open source, self-hosted alternative to Trello, Notion, and Asana. |
