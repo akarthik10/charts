@@ -1,6 +1,6 @@
 # filerun
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
 
 filerun helm package
 
@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | mariadb | 10.1.1 |
+| https://akarthik10.github.io/charts | mariadb | 1.0.2 |
 | https://library-charts.k8s-at-home.com | common | 4.3.0 |
 
 ## TL;DR
@@ -79,22 +79,20 @@ N/A
 | env | object | See below | environment variables. See more environment variables in the [filerun documentation](https://filerun.org/docs). |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"filerun/filerun"` | image repository |
+| image.repository | string | `"ghcr.io/akarthik10/filerun"` | image repository |
 | image.tag | string | chart.appVersion | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| mariadb.architecture | string | `"standalone"` |  |
-| mariadb.auth.database | string | `"filerun"` |  |
-| mariadb.auth.password | string | `"filerun-pass"` |  |
-| mariadb.auth.rootPassword | string | `"filerunrootoass"` |  |
-| mariadb.auth.username | string | `"filerun"` |  |
 | mariadb.enabled | bool | `true` |  |
-| mariadb.primary.persistance.enabled | bool | `false` |  |
+| mariadb.env.MYSQL_DATABASE | string | `"filerun"` |  |
+| mariadb.env.MYSQL_PASSWORD | string | `"filerun-pass"` |  |
+| mariadb.env.MYSQL_ROOT_PASSWORD | string | `"rootpass"` |  |
+| mariadb.env.MYSQL_USER | string | `"filerun"` |  |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 1.0.0
+### Version 1.0.1
 
 #### Added
 
