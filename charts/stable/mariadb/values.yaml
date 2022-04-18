@@ -31,9 +31,12 @@ service:
     ports:
       http:
         enabled: false
+        primary: false
       mysql:
+        enabled: true
+        primary: true
         port: 3306
-        protocol: tcp
+        protocol: TCP
 
 
 ingress:
