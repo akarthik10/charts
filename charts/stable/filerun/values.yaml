@@ -7,10 +7,10 @@
 
 image:
   # -- image repository
-  repository: filerun/filerun
+  repository: ghcr.io/akarthik10/filerun
   # -- image tag
   # @default -- chart.appVersion
-  tag: latest
+  tag: test-20220202
   # -- image pull policy
   pullPolicy: IfNotPresent
 
@@ -24,10 +24,10 @@ env:
   FR_DB_NAME: filerun
   FR_DB_USER: filerun
   FR_DB_PASS: filerun-pass
-  APACHE_RUN_USER: www-data
-  APACHE_RUN_USER_ID: 33
-  APACHE_RUN_GROUP: www-data
-  APACHE_RUN_GROUP_ID: 33
+  APACHE_RUN_USER: ani-files
+  APACHE_RUN_USER_ID: 1001
+  APACHE_RUN_GROUP: ani-files
+  APACHE_RUN_GROUP_ID: 1001
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
@@ -56,13 +56,8 @@ persistence:
 
 mariadb:
   enabled: true
-  architecture: standalone
-  auth:
-    database: filerun
-    username: filerun
-    password: filerun-pass
-    rootPassword: filerunrootoass
-  primary:
-    persistance:
-      enabled: false
-      # storageClass: ""    
+  env:
+    MYSQL_ROOT_PASSWORD: rootpass
+    MYSQL_DATABASE: filerun
+    MYSQL_USER: filerun
+    MYSQL_PASSWORD: filerun-pass
