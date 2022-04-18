@@ -7,6 +7,37 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-04-18T05:13:59.064697371Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://akarthik10.github.io/charts
+      version: 1.0.2
+    description: filerun helm package
+    digest: 98b7386e6018f741b01e3675a97a0c9d6f2ccf50d09cb12c56db1ba8601e97a4
+    home: https://github.com/akarthik10/charts/tree/master/charts/stable/filerun
+    icon: https://docs.filerun.com/lib/tpl/bootstrap3/images/logo.png
+    keywords:
+    - filerun
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: filerun@filerun.com
+      name: filerun
+    name: filerun
+    sources:
+    - https://github.com/filerun/docker
+    urls:
+    - https://github.com/akarthik10/charts/releases/download/filerun-1.0.1/filerun-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-04-15T21:57:50.618497907Z"
     dependencies:
     - name: common
@@ -87,4 +118,4 @@ entries:
     urls:
     - https://github.com/akarthik10/charts/releases/download/mariadb-1.0.1/mariadb-1.0.1.tgz
     version: 1.0.1
-generated: "2022-04-18T04:41:57.845890236Z"
+generated: "2022-04-18T05:13:59.064720571Z"
