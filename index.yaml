@@ -1,5 +1,37 @@
 apiVersion: v1
 entries:
+  baikal:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 0.9.2
+    created: "2022-04-22T22:35:13.404144655Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://akarthik10.github.io/charts
+      version: 1.0.2
+    description: baikal helm package
+    digest: a0517502b7971e9dd237b95a6d36196a2425a69bf7483076de99a6ec6f6921c3
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/baikal
+    icon: https://avatars.githubusercontent.com/u/28524376?s=400&v=4
+    keywords:
+    - baikal
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: baikal@baikal.com
+      name: baikal
+    name: baikal
+    sources:
+    - https://github.com/baikal/baikal-docker
+    urls:
+    - https://github.com/akarthik10/charts/releases/download/baikal-1.0.0/baikal-1.0.0.tgz
+    version: 1.0.0
   filerun:
   - annotations:
       artifacthub.io/changes: |
@@ -118,4 +150,4 @@ entries:
     urls:
     - https://github.com/akarthik10/charts/releases/download/mariadb-1.0.1/mariadb-1.0.1.tgz
     version: 1.0.1
-generated: "2022-04-18T05:13:59.064720571Z"
+generated: "2022-04-22T22:35:13.404156956Z"
