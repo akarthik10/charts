@@ -1,3 +1,4 @@
+---
 apiVersion: v2
 appVersion: 1.0.0
 description: filerun helm package
@@ -5,23 +6,23 @@ name: filerun
 version: 1.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
-- filerun
+  - filerun
 home: https://github.com/akarthik10/charts/tree/master/charts/stable/filerun
 icon: https://docs.filerun.com/lib/tpl/bootstrap3/images/logo.png
 sources:
-- https://github.com/filerun/docker
+  - https://github.com/filerun/docker
 maintainers:
-- name: filerun
-  email: filerun@filerun.com
+  - name: filerun
+    email: filerun@filerun.com
 dependencies:
-- name: common
-  repository: https://library-charts.k8s-at-home.com
-  version: 4.4.2
-- name: mariadb
-  repository: https://akarthik10.github.io/charts
-  version: 1.0.2
-  condition: mariadb.enabled
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.4.2
+  - name: mariadb
+    repository: https://akarthik10.github.io/charts
+    version: 1.0.2
+    condition: mariadb.enabled
 annotations:
-  artifacthub.io/changes: |
-    - kind: added
-      description: Initial version
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 4.4.2

@@ -1,3 +1,4 @@
+---
 apiVersion: v2
 appVersion: 0.9.2
 description: baikal helm package
@@ -5,23 +6,23 @@ name: baikal
 version: 1.1.0
 kubeVersion: ">=1.16.0-0"
 keywords:
-- baikal
+  - baikal
 home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/baikal
 icon: https://avatars.githubusercontent.com/u/28524376?s=400&v=4
 sources:
-- https://github.com/baikal/baikal-docker
+  - https://github.com/baikal/baikal-docker
 maintainers:
-- name: baikal
-  email: baikal@baikal.com
+  - name: baikal
+    email: baikal@baikal.com
 dependencies:
-- name: common
-  repository: https://library-charts.k8s-at-home.com
-  version: 4.4.2
-- name: mariadb
-  repository: https://akarthik10.github.io/charts
-  version: 1.0.2
-  condition: mariadb.enabled
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.4.2
+  - name: mariadb
+    repository: https://akarthik10.github.io/charts
+    version: 1.0.2
+    condition: mariadb.enabled
 annotations:
-  artifacthub.io/changes: |
-    - kind: added
-      description: Initial version
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 4.4.2
