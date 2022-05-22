@@ -1,6 +1,6 @@
 # mariadb
 
-![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![AppVersion: 10.5.16](https://img.shields.io/badge/AppVersion-10.5.16-informational?style=flat-square)
+![Version: 1.1.0](https://img.shields.io/badge/Version-1.1.0-informational?style=flat-square) ![AppVersion: 10.5.16](https://img.shields.io/badge/AppVersion-10.5.16-informational?style=flat-square)
 
 mariadb helm package
 
@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://library-charts.k8s-at-home.com | common | 4.3.0 |
+| https://library-charts.k8s-at-home.com | common | 4.4.2 |
 
 ## TL;DR
 
@@ -116,15 +116,15 @@ N/A
 
 ## Changelog
 
-### Version 1.0.3
+### Version 1.1.0
 
 #### Added
 
-* Initial version
+N/A
 
 #### Changed
 
-N/A
+* Upgraded `common` chart dependency to version 4.4.2
 
 #### Fixed
 
