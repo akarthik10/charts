@@ -1,6 +1,6 @@
 # filerun
 
-![Version: 1.1.0](https://img.shields.io/badge/Version-1.1.0-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
+![Version: 1.2.0](https://img.shields.io/badge/Version-1.2.0-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
 
 filerun helm package
 
@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://akarthik10.github.io/charts | mariadb | 1.0.2 |
+| https://akarthik10.github.io/charts | mariadb | 1.1.0 |
 | https://library-charts.k8s-at-home.com | common | 4.4.2 |
 
 ## TL;DR
@@ -92,7 +92,7 @@ N/A
 
 ## Changelog
 
-### Version 1.1.0
+### Version 1.2.0
 
 #### Added
 
@@ -100,7 +100,7 @@ N/A
 
 #### Changed
 
-* Upgraded `common` chart dependency to version 4.4.2
+* Upgraded `mariadb` chart dependency to version 1.1.0
 
 #### Fixed
 
