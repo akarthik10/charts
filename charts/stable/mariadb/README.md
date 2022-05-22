@@ -1,6 +1,6 @@
 # mariadb
 
-![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![AppVersion: 10.5.15](https://img.shields.io/badge/AppVersion-10.5.15-informational?style=flat-square)
+![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![AppVersion: 10.5.16](https://img.shields.io/badge/AppVersion-10.5.16-informational?style=flat-square)
 
 mariadb helm package
 
@@ -116,7 +116,7 @@ N/A
 
 ## Changelog
 
-### Version 1.0.2
+### Version 1.0.3
 
 #### Added
 
