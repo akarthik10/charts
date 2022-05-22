@@ -101,6 +101,33 @@ entries:
         - kind: added
           description: Initial version
     apiVersion: v2
+    appVersion: 10.5.16
+    created: "2022-05-22T21:12:45.397414734Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: mariadb helm package
+    digest: a16fb0fbba5fad1b9d51acb6c9a545648c1628b1184c9fe5d413af18e993fda1
+    home: https://github.com/akarthik10/charts/tree/master/charts/stable/mariadb
+    icon: https://mariadb.org/icon
+    keywords:
+    - mariadb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: mariadb@mariadb.com
+      name: mariadb
+    name: mariadb
+    sources:
+    - https://github.com/linuxserver/docker-mariadb
+    urls:
+    - https://github.com/akarthik10/charts/releases/download/mariadb-1.0.3/mariadb-1.0.3.tgz
+    version: 1.0.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
     appVersion: 10.5.15
     created: "2022-04-18T04:41:57.845880036Z"
     dependencies:
@@ -150,4 +177,4 @@ entries:
     urls:
     - https://github.com/akarthik10/charts/releases/download/mariadb-1.0.1/mariadb-1.0.1.tgz
     version: 1.0.1
-generated: "2022-04-22T22:35:13.404156956Z"
+generated: "2022-05-22T21:12:45.397436734Z"
