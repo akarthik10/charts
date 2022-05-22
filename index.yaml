@@ -2,6 +2,37 @@ apiVersion: v1
 entries:
   baikal:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.4.2
+    apiVersion: v2
+    appVersion: 0.9.2
+    created: "2022-05-22T21:34:27.882863537Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://akarthik10.github.io/charts
+      version: 1.0.2
+    description: baikal helm package
+    digest: ff2df932a880f8da05ff473d8227c7337c8a1b1b9f1c381d50289e84d7811884
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/baikal
+    icon: https://avatars.githubusercontent.com/u/28524376?s=400&v=4
+    keywords:
+    - baikal
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: baikal@baikal.com
+      name: baikal
+    name: baikal
+    sources:
+    - https://github.com/baikal/baikal-docker
+    urls:
+    - https://github.com/akarthik10/charts/releases/download/baikal-1.1.0/baikal-1.1.0.tgz
+    version: 1.1.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: added
           description: Initial version
@@ -33,6 +64,37 @@ entries:
     - https://github.com/akarthik10/charts/releases/download/baikal-1.0.0/baikal-1.0.0.tgz
     version: 1.0.0
   filerun:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.4.2
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-05-22T21:34:27.992242801Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://akarthik10.github.io/charts
+      version: 1.0.2
+    description: filerun helm package
+    digest: cf4cdbf537ff268aaa74f0634b0891092ab6cbfdad4e2763b8d9c445eb9a9770
+    home: https://github.com/akarthik10/charts/tree/master/charts/stable/filerun
+    icon: https://docs.filerun.com/lib/tpl/bootstrap3/images/logo.png
+    keywords:
+    - filerun
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: filerun@filerun.com
+      name: filerun
+    name: filerun
+    sources:
+    - https://github.com/filerun/docker
+    urls:
+    - https://github.com/akarthik10/charts/releases/download/filerun-1.1.0/filerun-1.1.0.tgz
+    version: 1.1.0
   - annotations:
       artifacthub.io/changes: |
         - kind: added
@@ -96,6 +158,33 @@ entries:
     - https://github.com/akarthik10/charts/releases/download/filerun-1.0.0/filerun-1.0.0.tgz
     version: 1.0.0
   mariadb:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.4.2
+    apiVersion: v2
+    appVersion: 10.5.16
+    created: "2022-05-22T21:34:28.097095191Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: mariadb helm package
+    digest: 5571305d6133b4fb8a473832d28c74d04f030a98fdc11426780a22fc00ebf05d
+    home: https://github.com/akarthik10/charts/tree/master/charts/stable/mariadb
+    icon: https://mariadb.org/icon
+    keywords:
+    - mariadb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: mariadb@mariadb.com
+      name: mariadb
+    name: mariadb
+    sources:
+    - https://github.com/linuxserver/docker-mariadb
+    urls:
+    - https://github.com/akarthik10/charts/releases/download/mariadb-1.1.0/mariadb-1.1.0.tgz
+    version: 1.1.0
   - annotations:
       artifacthub.io/changes: |
         - kind: added
@@ -177,4 +266,4 @@ entries:
     urls:
     - https://github.com/akarthik10/charts/releases/download/mariadb-1.0.1/mariadb-1.0.1.tgz
     version: 1.0.1
-generated: "2022-05-22T21:12:45.397436734Z"
+generated: "2022-05-22T21:34:28.097150092Z"
