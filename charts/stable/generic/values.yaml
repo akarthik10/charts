@@ -36,6 +36,7 @@ service:
         enabled: false
         primary: false
       wg-udp:
+        enabled: true
         primary: true
         port: 61200
         protocol: UDP
