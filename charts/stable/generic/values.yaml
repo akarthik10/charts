@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: debian/debian
+  repository: docker.io/debian
   # -- image tag
   # @default -- chart.appVersion
   tag: 11.5-slim
