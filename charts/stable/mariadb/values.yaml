@@ -73,7 +73,7 @@ probes:
       initialDelaySeconds: 10
       periodSeconds: 10
       timeoutSeconds: 1
-      failureThreshold: 3
+      failureThreshold: 3  
   startup:
     enabled: true
     custom: true
@@ -87,7 +87,7 @@ probes:
       initialDelaySeconds: 10
       periodSeconds: 10
       timeoutSeconds: 1
-      failureThreshold: 3
+      failureThreshold: 3 
 
 # -- Configure persistence settings for the chart under this key.
 # @default -- See values.yaml
