@@ -1,5 +1,33 @@
 apiVersion: v1
 entries:
+  altstore:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-10-08T18:48:26.146423275Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: altstore helm package
+    digest: cb40c835834cead21c76dfc6e857f7b20c512f64f2bb6918d19de7e648786727
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/altstore
+    icon: https://altstore.org/icon
+    keywords:
+    - altstore
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: altstore@altstore.com
+      name: altstore
+    name: altstore
+    sources:
+    - https://github.com/altstore/altstore-docker
+    urls:
+    - https://github.com/akarthik10/charts/releases/download/altstore-1.1.0/altstore-1.1.0.tgz
+    version: 1.1.0
   baikal:
   - annotations:
       artifacthub.io/changes: |-
@@ -328,4 +356,4 @@ entries:
     urls:
     - https://github.com/akarthik10/charts/releases/download/mariadb-1.0.1/mariadb-1.0.1.tgz
     version: 1.0.1
-generated: "2022-05-22T21:58:23.904435839Z"
+generated: "2022-10-08T18:48:26.146466676Z"
