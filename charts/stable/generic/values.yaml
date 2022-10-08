@@ -36,9 +36,12 @@ service:
         port: 1880
 
 probes:
-  startup: false
-  readiness: false
-  liveness: false
+  startup: 
+    enabled: false
+  readiness: 
+    enabled: false
+  liveness: 
+    enabled: false
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
