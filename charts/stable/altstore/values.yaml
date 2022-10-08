@@ -31,12 +31,15 @@ env:
 # @default -- See values.yaml
 service:
   main:
+    enabled: false
+    primary: false
     ports:
       http:
         enabled: false
         primary: false
   wg-udp:
     enabled: true
+    primary: true
     ports:
       wg-udp:
         enabled: true
