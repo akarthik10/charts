@@ -33,15 +33,34 @@ service:
   main:
     ports:
       http:
-        port: 1880
+        enabled: false
+        primary: false
+      wg-udp:
+        primary: true
+        port: 61200
+        protocol: UDP
+
 
 probes:
-  startup: 
-    enabled: false
-  readiness: 
-    enabled: false
-  liveness: 
-    enabled: false
+  liveness:
+    enabled: true
+    custom: true
+    spec:
+      exec:
+        command: [ls, /]
+  readiness:
+    enabled: true
+    custom: true
+    spec:
+      exec:
+        command: [ls, /]
+  startup:
+    enabled: true
+    custom: true
+    spec:
+      exec:
+        command: [ls, /]
+
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
