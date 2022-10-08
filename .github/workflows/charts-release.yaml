@@ -60,6 +60,7 @@ jobs:
           commit_user_name: k8s-at-home[bot]
           commit_user_email: k8s-at-home[bot]@users.noreply.github.com
           commit_author: k8s-at-home[bot] <k8s-at-home[bot]@users.noreply.github.com>
+          disable_globbing: true
 
       - name: Save commit hash
         id: save-commit-hash
