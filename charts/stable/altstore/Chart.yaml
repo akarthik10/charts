@@ -19,5 +19,5 @@ dependencies:
   version: 4.4.2
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Initial version
+    - kind: changed
+      description: Fix ports
