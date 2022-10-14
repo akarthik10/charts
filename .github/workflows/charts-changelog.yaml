@@ -72,6 +72,7 @@ jobs:
           commit_message: "chore: Auto-update chart metadata"
           commit_user_name: ${{ github.actor }}
           commit_user_email: ${{ github.actor }}@users.noreply.github.com
+          disable_globbing: true
 
       - name: Save commit hash
         id: save-commit-hash
