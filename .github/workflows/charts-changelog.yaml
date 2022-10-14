@@ -48,26 +48,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install Kubernetes tools
-        if: inputs.isRenovatePR == 'true'
-        uses: yokawasa/action-setup-kube-tools@v0.8.0
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          setup-tools: |
-            yq
-          yq: "4.20.1"
+          python-version: "3.10"
 
       - name: Annotate Charts.yaml for Renovate PR's
         if: inputs.isRenovatePR == 'true'
         env:
-          DEFAULT_BRANCH: "${{ github.event.repository.default_branch }}"
+          CHECK_BRANCH: "origin/${{ github.event.repository.default_branch }}"
         run: |
-          CHARTS=(${{ inputs.modifiedCharts }})
-          for i in "${CHARTS[@]}"
-          do
-              IFS='/' read -r -a chart_parts <<< "$i"
-                ./.github/scripts/renovate-releasenotes.sh "charts/${chart_parts[0]}/${chart_parts[1]}"
-              echo ""
-          done
+          pip install -r ./.github/scripts/requirements.txt
+          ./.github/scripts/renovate-releasenotes.py --check-branch "$CHECK_BRANCH" ${{ inputs.modifiedCharts }}
 
       - name: Create commit
         id: create-commit
@@ -75,7 +67,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           file_pattern: charts/**/
-          commit_message: "chore: Auto-update chart metadata [skip ci]"
+          commit_message: "chore: Auto-update chart metadata"
           commit_user_name: ${{ github.actor }}
           commit_user_email: ${{ github.actor }}@users.noreply.github.com
 
