@@ -58,8 +58,6 @@ jobs:
         env:
           CHECK_BRANCH: "origin/${{ github.event.repository.default_branch }}"
         run: |
-          echo "ECHOING"
-          echo "${{ inputs.modifiedCharts }} ${{ inputs.isRenovatePR }}"
           pip install -r ./.github/scripts/requirements.txt
           ./.github/scripts/renovate-releasenotes.py --check-branch "$CHECK_BRANCH" ${{ inputs.modifiedCharts }}
 
