@@ -54,7 +54,7 @@ jobs:
           python-version: "3.10"
 
       - name: Annotate Charts.yaml for Renovate PR's
-        if: inputs.isRenovatePR == 'true' && inputs.modifiedCharts != ''
+        if: inputs.isRenovatePR == 'true' && inputs.modifiedCharts != ""
         env:
           CHECK_BRANCH: "origin/${{ github.event.repository.default_branch }}"
         run: |
