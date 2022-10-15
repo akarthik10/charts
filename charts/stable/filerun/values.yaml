@@ -6,12 +6,13 @@
 #
 
 image:
+  # -- image registry
   registry: ghcr.io
   # -- image repository
   repository: akarthik10/filerun
   # -- image tag
   # @default -- chart.appVersion
-  tag: test-20220202
+  tag: 1.20220519.0
   # -- image pull policy
   pullPolicy: IfNotPresent
 
