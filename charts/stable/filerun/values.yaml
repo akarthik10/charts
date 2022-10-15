@@ -6,8 +6,9 @@
 #
 
 image:
+  registry: ghcr.io
   # -- image repository
-  repository: ghcr.io/akarthik10/filerun
+  repository: akarthik10/filerun
   # -- image tag
   # @default -- chart.appVersion
   tag: test-20220202
