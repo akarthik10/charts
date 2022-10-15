@@ -6,9 +6,9 @@ on:
       - master
     types:
       - opened
-      - edited
       - reopened
-      - ready_for_review    
+      - ready_for_review
+      - synchronized
 
 concurrency:
   group: ${{ github.head_ref }}-pr-validate
