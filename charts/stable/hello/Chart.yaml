@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: hello helm package
+name: hello
+version: 1.2.1
+kubeVersion: ">=1.16.0-0"
+keywords:
+- hello
+home: https://github.com/akarthik10/charts/tree/master/charts/stable/hello
+icon: https://hello.org/icon
+sources:
+- https://github.com/hello/hello-docker
+maintainers:
+- name: hello
+  email: hello@hello.com
+dependencies:
+- name: common
+  repository: https://akarthik10.github.io/library-charts/
+  version: 4.5.3
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Update common library version
