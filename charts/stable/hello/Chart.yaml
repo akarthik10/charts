@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 1.0.0
 description: hello helm package
 name: hello
-version: 1.2.1
+version: 1.2.2
 kubeVersion: ">=1.16.0-0"
 keywords:
 - hello
@@ -16,8 +16,8 @@ maintainers:
 dependencies:
 - name: common
   repository: https://akarthik10.github.io/library-charts/
-  version: 4.5.3
+  version: 4.5.4
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Update common library version
+      description: Update common library version to 4.5.4
