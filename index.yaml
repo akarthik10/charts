@@ -460,6 +460,33 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Update common library version to 4.5.4
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-10-17T22:21:28.580387762Z"
+    dependencies:
+    - name: common
+      repository: https://akarthik10.github.io/library-charts/
+      version: 4.5.4
+    description: hello helm package
+    digest: e95c4bf84e8b0a63dca61684086e97f6782f36872cdcd00f5af89ff8fe7ee304
+    home: https://github.com/akarthik10/charts/tree/master/charts/stable/hello
+    icon: https://hello.org/icon
+    keywords:
+    - hello
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: hello@hello.com
+      name: hello
+    name: hello
+    sources:
+    - https://github.com/hello/hello-docker
+    urls:
+    - https://github.com/akarthik10/charts/releases/download/hello-1.2.2/hello-1.2.2.tgz
+    version: 1.2.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update common library version
     apiVersion: v2
     appVersion: 1.0.0
@@ -647,4 +674,4 @@ entries:
     urls:
     - https://github.com/akarthik10/charts/releases/download/mariadb-1.0.1/mariadb-1.0.1.tgz
     version: 1.0.1
-generated: "2022-10-17T04:02:23.030189057Z"
+generated: "2022-10-17T22:21:28.580428692Z"
