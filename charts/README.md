@@ -4,6 +4,7 @@
 | ----- | ----------- |
 | [baikal](stable/baikal) | baikal helm package |
 | [filerun](stable/filerun) | filerun helm package |
+| [generic](stable/generic) | generic helm package |
 | [hello](stable/hello) | hello helm package |
 | [mariadb](stable/mariadb) | mariadb helm package |
 ### Incubator charts:
