@@ -10,7 +10,7 @@ image:
   repository: nginxdemos/hello
   # -- image tag
   # @default -- chart.appVersion
-  tag: 0.3
+  tag: '0.3'
   # -- image pull policy
   pullPolicy: IfNotPresent
 
