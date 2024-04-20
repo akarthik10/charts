@@ -10,7 +10,7 @@ image:
   repository: ckulka/baikal
   # -- image tag
   # @default -- chart.appVersion
-  tag: 0.9.2
+  tag: 0.9.5
   # -- image pull policy
   pullPolicy: IfNotPresent
 
