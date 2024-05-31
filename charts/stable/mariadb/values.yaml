@@ -10,7 +10,7 @@ image:
   repository: linuxserver/mariadb
   # -- image tag
   # @default -- chart.appVersion
-  tag: 10.6.9
+  tag: 10.11.8
   # -- image pull policy
   pullPolicy: IfNotPresent
 
