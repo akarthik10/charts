@@ -12,7 +12,7 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
 
       - name: Checkout
@@ -93,7 +93,7 @@ jobs:
 
   generate-summary:
     name: Auto-generate charts summary
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     needs:
       - release
     steps:
