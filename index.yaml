@@ -458,6 +458,33 @@ entries:
     version: 1.0.0
   generic:
   - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Update common library version to 4.5.7
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-08-26T02:46:15.851996171Z"
+    dependencies:
+    - name: common
+      repository: https://akarthik10.github.io/library-charts/
+      version: 4.5.7
+    description: generic helm package
+    digest: 0131429f985e7742018c8567404ec8e761b4f53268050a03d70c871e264a7c85
+    home: https://github.com/akarthik10/charts/tree/master/charts/stable/generic
+    icon: https://generic.org/icon
+    keywords:
+    - generic
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: generic@generic.com
+      name: generic
+    name: generic
+    sources:
+    - https://github.com/generic/generic-docker
+    urls:
+    - https://github.com/akarthik10/charts/releases/download/generic-1.2.4/generic-1.2.4.tgz
+    version: 1.2.4
+  - annotations:
       artifacthub.io/changes: "- kind: changed\n  description: Update common library
         version to 4.5.6 \n"
     apiVersion: v2
@@ -755,4 +782,4 @@ entries:
     urls:
     - https://github.com/akarthik10/charts/releases/download/mariadb-1.0.1/mariadb-1.0.1.tgz
     version: 1.0.1
-generated: "2024-08-26T02:18:29.287399322Z"
+generated: "2024-08-26T02:46:15.852062365Z"
