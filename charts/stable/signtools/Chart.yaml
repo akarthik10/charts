@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: signtools helm package
+name: signtools
+version: 1.2.1
+kubeVersion: ">=1.16.0-0"
+keywords:
+- signtools
+home: https://github.com/akarthik10/charts/tree/master/charts/stable/signtools
+icon: https://signtools.org/icon
+sources:
+- https://github.com/signtools/signtools-docker
+maintainers:
+- name: signtools
+  email: signtools@signtools.com
+dependencies:
+- name: common
+  repository: https://akarthik10.github.io/library-charts/
+  version: 4.5.3
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Update common library version
